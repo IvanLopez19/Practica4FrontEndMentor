@@ -1,0 +1,106 @@
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+body{
+    background-color: var(--Violet);
+    background-image: url('../Assets/bg-mobile.svg');
+}
+
+.encabezado{
+    width: 100vw;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+}
+.encabezado .image{
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.encabezado .logo{
+    width: 100px;
+    position: relative;
+    left:0;
+}
+
+.register{
+    width: 100vw;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    text-align: center;
+    color:white;
+}
+.register .title{
+    font-family: 'Poppins';
+}
+
+.register .text{
+    font-family: 'Open Sans';
+}
+
+.register .button{
+    width: 250px;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--Violet);
+    height: 2rem;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    transition-property: background-color;
+    transition-duration: 0.25s;
+}
+
+.register .button:hover{
+    background-color: var(--Violet);
+    color:white;
+    border: solid 2px white;
+    box-sizing: border-box;
+}
+
+.social .social-items{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.social .social-items .item{
+    margin-right: 1rem;
+    font-size: 30px;
+    color: white;
+    transition-property: color;
+    transition-duration: 0.25s;
+}
+
+.social .social-items .item:hover{
+    color: var(--Violet);
+    text-shadow: 0px 0px 4px rgba(255,255,255, 3)
+}
+
+@media screen and (min-width: 840px){
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+    }
+    .register{
+        width: 800px;
+        margin: 9rem 1rem;
+        text-align: left;
+    }
+    .social .social-items{
+        justify-content: right;
+    }
+    .encabezado .logo{
+        width: 200px;
+    }
+}
+
+/* @media screen and (min-width: 840px){
+    .encabezado{
+        display: inline-block;
+    }
+} */
